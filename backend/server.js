@@ -3,13 +3,13 @@ require("./src/config/db");
 // dotenv
 require("dotenv").config();
 // Nodemailer
-require("./src/util/sendEmail");
+require("./src/utils/sendEmail");
 // colors
 require("colors");
 const app = require("express")();
 const cors = require("cors");
 const bodyParser = require("body-parser");
-const routes = require("./src/routes.js");
+const routes = require("./src/routes");
 const { errorHandler } = require("./src/middleware/error_middleware");
 const connectDB = require("./src/config/db");
 
